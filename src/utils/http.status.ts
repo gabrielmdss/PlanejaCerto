@@ -1,0 +1,16 @@
+export const CREATED = 201; // Recurso criado com sucesso
+export const SUCCESS = 200; // Requisição bem-sucedida
+export const NO_CONTENT = 204; // Requisição bem-sucedida, mas sem conteúdo a ser retornado
+export const BAD_REQUEST = 400; // A requisição não pôde ser processada devido a erro do cliente
+export const UNAUTHORIZED = 401; // Requisição não autorizada (sem token ou com token inválido)
+export const FORBIDDEN = 403; // A requisição foi entendida, mas o servidor se recusa a atendê-la
+export const NOT_FOUND = 404; // Recurso não encontrado
+export const METHOD_NOT_ALLOWED = 405; // Método HTTP não permitido para o recurso
+export const CONFLICT = 409; // Conflito no estado atual do recurso
+export const GONE = 410; // Recurso não disponível
+export const UNPROCESSABLE_ENTITY = 422; // A requisição está bem formada, mas não pode ser seguida devido a erros semânticos
+export const INTERNAL_SERVER = 500; // Erro no servidor ao processar a requisição
+export const NOT_IMPLEMENTED = 501; // O servidor não reconhece o método ou não pode processá-lo
+export const BAD_GATEWAY = 502; // O servidor recebeu uma resposta inválida de outro servidor
+export const SERVICE_UNAVAILABLE = 503; // O servidor não está disponível temporariamente
+export const GATEWAY_TIMEOUT = 504; // O servidor atuou como gateway e não obteve uma resposta a tempo

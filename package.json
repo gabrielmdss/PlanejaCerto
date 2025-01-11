@@ -4,7 +4,9 @@
   "description": "PlanejaCerto é uma aplicação web/serviço backend desenvolvido em Node.js, com o objetivo de auxiliar usuários a alcançarem metas financeiras de forma simples e acessível. A aplicação permite que o usuário registre sua renda, defina metas, planeje investimentos e monitore o progresso ao longo do tempo.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon --watch \"./src/**\" ./src/server.ts",
+    "build": "tsc --build",
+    "start": "node dist/server.js"
   },
   "repository": {
     "type": "git",
@@ -18,7 +20,23 @@
   },
   "homepage": "https://github.com/gabrielmdss/PlanejaCerto#readme",
   "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/joi": "^17.2.2",
+    "@types/knex": "^0.15.2",
     "@types/node": "^22.10.5",
+    "@types/pg": "^8.11.10",
     "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "@types/nodemon": "^1.19.6",
+    "axios": "^1.7.9",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "joi": "^17.13.3",
+    "knex": "^3.1.0",
+    "nodemon": "^3.1.9",
+    "pg": "^8.13.1"
   }
 }
